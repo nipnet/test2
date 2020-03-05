@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div id="wazne"></div>
+
+<script>
+
+    function osoba(imie,nazwisko,age)
+    {
+        this.name = imie; //wlasciwosci
+        this.age = age;
+        this.surname = nazwisko;
+
+
+
+
+        this.toString = function()
+        {
+            if( this.name === 'dupek')
+            {
+                return this.name + " to brzydkie imie " ;
+            }else{
+                return this.name + " " + this.surname + " " + this.age ;
+            }
+
+        }
+    }
+
+    var x = new osoba("Arek","Kowalczk", 15);
+    var y = new osoba("dupek","Wieclawski", 6);
+    div = document.getElementById("wazne");
+    div.innerHTML = y;
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
